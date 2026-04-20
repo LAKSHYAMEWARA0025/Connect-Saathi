@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* hide scrollbars */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+/* Hide horizontal scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.animate-fill-forwards {
+  animation-fill-mode: forwards;
+}
+
+:root {
+  --federal-blue: #160c53ff;
+  --marian-blue: #06478bff;
+  --honolulu-blue: #0067b5ff;
+  --blue-green: #0788b4ff;
+  --pacific-cyan: #0ec2d8ff;
+  --vivid-sky-blue: #3ebad6ff;
+  --non-photo-blue: #91cfeeff;
+  --non-photo-blue-2: #b2ede0ff;
+  --light-cyan: #bcffffff;
+}
